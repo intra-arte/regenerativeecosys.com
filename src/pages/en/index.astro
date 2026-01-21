@@ -1,0 +1,113 @@
+---
+import Layout from '../../layouts/layout.astro';
+---
+
+<Layout title="Regenerative Ecosystem | MUNAI" lang="en">
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gray-light">
+      <div class="text-center px-4">
+        <div class="mb-8">
+          <img src="/isotipo_prosperidad_regenerativa.png" alt="Regenerative Prosperity Logo" class="w-20 h-20 mx-auto" />
+        </div>
+        <h1 class="text-5xl md:text-7xl mb-6 text-gray-dark">
+          Regenerative Ecosystem
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-primary max-w-3xl mx-auto">
+          In a world of scarcity, life and culture become the ultimate assets.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <a href="#capitals" class="px-8 py-3 bg-gray-dark text-white hover:bg-gray-primary transition">
+            Learn More
+          </a>
+          <a href="#projects" class="px-8 py-3 border-2 border-gray-dark hover:bg-gray-light transition">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 5 Capitals -->
+    <section id="capitals" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl md:text-5xl text-center mb-16">The 5 Capitals</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Natural Capital -->
+          <div class="text-center p-8 hover:bg-gray-light transition">
+            <div class="text-5xl mb-4" style="color: var(--natural)">✻</div>
+            <h3 class="text-2xl mb-4">Natural Capital</h3>
+            <p class="text-gray-primary mb-4">Water as the origin</p>
+            <p class="text-sm">Life, nature, and ecological foundation that sustains all activities.</p>
+          </div>
+
+          <!-- Social Capital -->
+          <div class="text-center p-8 hover:bg-gray-light transition">
+            <div class="text-5xl mb-4" style="color: var(--social)">⚭</div>
+            <h3 class="text-2xl mb-4">Social Capital</h3>
+            <p class="text-gray-primary mb-4">Multidisciplinary alliances</p>
+            <p class="text-sm">Relationships, alliances, and trust. Cooperation and networking.</p>
+          </div>
+
+          <!-- Ancestral Capital -->
+          <div class="text-center p-8 hover:bg-gray-light transition">
+            <div class="text-5xl mb-4" style="color: var(--ancestral)">∞</div>
+            <h3 class="text-2xl mb-4">Ancestral Capital</h3>
+            <p class="text-gray-primary mb-4">Documenting for posterity</p>
+            <p class="text-sm">Continuity, identity, and living memory. Traditional knowledge and cultural expressions.</p>
+          </div>
+
+          <!-- Economic Capital -->
+          <div class="text-center p-8 hover:bg-gray-light transition">
+            <div class="text-5xl mb-4" style="color: var(--economico)">✴︎</div>
+            <h3 class="text-2xl mb-4">Economic Capital</h3>
+            <p class="text-gray-primary mb-4">Productive transformation</p>
+            <p class="text-sm">Productive energy. Capacity to generate value and sustain activity.</p>
+          </div>
+
+          <!-- Community Capital -->
+          <div class="text-center p-8 hover:bg-gray-light transition">
+            <div class="text-5xl mb-4" style="color: var(--comunitario)">⦿</div>
+            <h3 class="text-2xl mb-4">Community Capital</h3>
+            <p class="text-gray-primary mb-4">Common vision</p>
+            <p class="text-sm">Core and common purpose. Collective impact and shared benefit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Projects -->
+    <section id="projects" class="py-20 px-4 bg-gray-light">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl md:text-5xl text-center mb-16">Active Projects</h2>
+        
+        <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+          <!-- San Pablo del Lago -->
+          <div class="bg-white p-8">
+            <h3 class="text-3xl mb-4">San Pablo del Lago</h3>
+            <p class="text-xl text-gray-primary mb-4">Imbakucha, Ecuador</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold" style="color: var(--natural)">82%</span>
+              <span class="text-gray-primary ml-2">regenerative coherence</span>
+            </div>
+            <p class="mb-6">Pilot project for comprehensive territorial regeneration with Gold Standard verification.</p>
+            <a href="/en/projects/san-pablo" class="inline-block px-6 py-2 bg-gray-dark text-white hover:bg-gray-primary transition">
+              View Project →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Language Selector -->
+    <section class="py-12 px-4 bg-gray-dark text-white text-center">
+      <div class="flex gap-4 justify-center">
+        <a href="/" class="hover:underline">Español</a>
+        <span>|</span>
+        <a href="/en" class="underline">English</a>
+        <span>|</span>
+        <a href="/it" class="hover:underline">Italiano</a>
+      </div>
+    </section>
+  </main>
+</Layout>
