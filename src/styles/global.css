@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray-primary: #A8B5B8;
+  --gray-dark: #4A5759;
+  --gray-light: #E8ECED;
+  --white: #FFFFFF;
+  --natural: #5A8F7B;
+  --social: #7B9DAA;
+  --ancestral: #A8B5B8;
+  --economico: #D4A574;
+  --comunitario: #B5766A;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
+}
+
+body {
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--gray-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
