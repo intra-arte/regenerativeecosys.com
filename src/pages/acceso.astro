@@ -1,0 +1,45 @@
+---
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F8FAFC;font-family:sans-serif}
+    .card{width:100%;max-width:360px;padding:48px 40px;background:white;border:1px solid #e2e8f0;border-top:3px solid #84A8A9;text-align:center}
+    h1{font-size:1rem;color:#1e293b;margin-bottom:6px}
+    p{font-size:0.8rem;color:#94a3b8;margin-bottom:28px;line-height:1.6}
+    input{width:100%;padding:12px;border:1px solid #e2e8f0;background:#F8FAFC;font-size:1rem;text-align:center;letter-spacing:0.2em;outline:none;margin-bottom:14px}
+    input:focus{border-color:#84A8A9}
+    button{width:100%;padding:12px;background:#1e293b;color:white;border:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer}
+    .err{font-size:0.75rem;color:#B89595;margin-top:10px;display:none}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Ecosistema Regenerativo</h1>
+    <p>Sitio en revision con socios.<br/>Ingresa la clave de acceso.</p>
+    <input type="password" id="c" placeholder="clave" autofocus />
+    <button onclick="v()">Ingresar</button>
+    <div class="err" id="e">Clave incorrecta</div>
+  </div>
+  <script>
+    if(localStorage.getItem('munai_acceso')==='2026')window.location.href='/';
+    function v(){
+      var val=document.getElementById('c').value.trim();
+      if(val==='2026'){
+        localStorage.setItem('munai_acceso','2026');
+        window.location.href='/';
+      }else{
+        document.getElementById('e').style.display='block';
+        document.getElementById('c').value='';
+        document.getElementById('c').focus();
+      }
+    }
+    document.getElementById('c').addEventListener('keydown',function(e){if(e.key==='Enter')v();});
+  </script>
+</body>
+</html>

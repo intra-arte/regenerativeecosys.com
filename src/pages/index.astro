@@ -1,113 +1,164 @@
 ---
 import Layout from '../layouts/layout.astro';
 ---
-
 <Layout title="Ecosistema Regenerativo | MUNAI" lang="es">
   <main class="min-h-screen">
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-gray-light">
-      <div class="text-center px-4">
-        <div class="mb-8">
-          <img src="/isotipo_prosperidad_regenerativa.png" alt="Isotipo Prosperidad Regenerativa" class="w-20 h-20 mx-auto" />
+    <section class="relative min-h-screen flex items-center justify-center" style="background: #F8FAFC;">
+      <div class="text-center px-6 max-w-4xl mx-auto">
+        <div class="text-7xl md:text-9xl mb-6" style="color: var(--social); font-family: 'Cinzel', serif;">✣</div>
+        <h1 class="text-4xl md:text-6xl mb-6" style="color: var(--gray-dark); font-family: 'Cinzel', serif; font-weight: 400; line-height: 1.2;">Ecosistema Regenerativo</h1>
+        <p class="text-lg mb-4 max-w-2xl mx-auto" style="color: #334155; font-family: 'Georgia', serif; font-style: italic; line-height: 1.8;">Existe una riqueza que los sistemas convencionales no miden. Hemos construido la metodología para hacerla visible.</p>
+        <p class="text-sm mb-10 max-w-xl mx-auto" style="color: var(--gray-primary); line-height: 1.7;">Metodología activa en Ecuador · Piloto: Biocorredor Imbakucha · 44 bioemprendimientos verificados</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="/manifiesto" class="px-8 py-3 text-white transition-all hover:opacity-80" style="background: var(--gray-dark); font-family: 'Cinzel', serif; letter-spacing: 0.08em; font-size: 0.85rem;">Leer el Manifiesto</a>
+          <a href="/proyectos/biocorredor-imbakucha" class="px-8 py-3 border transition-all hover:bg-white" style="border-color: var(--gray-dark); color: var(--gray-dark); font-family: 'Cinzel', serif; letter-spacing: 0.08em; font-size: 0.85rem;">Ver el Proyecto</a>
         </div>
-        <h1 class="text-5xl md:text-7xl mb-6 text-gray-dark">
-          Ecosistema Regenerativo
-        </h1>
-        <p class="text-xl md:text-2xl mb-8 text-gray-primary max-w-3xl mx-auto">
-          En un mundo de escasez, la vida y la cultura se convierten en los activos más valiosos.
-        </p>
-        <div class="flex gap-4 justify-center">
-          <a href="#capitales" class="px-8 py-3 bg-gray-dark text-white hover:bg-gray-primary transition">
-            Conoce Más
-          </a>
-          <a href="#proyectos" class="px-8 py-3 border-2 border-gray-dark hover:bg-gray-light transition">
-            Ver Proyectos
-          </a>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-3xl mx-auto">
+          <div class="p-4" style="background: white; border: 1px solid #e2e8f0;"><div class="text-2xl mb-1" style="color: var(--social); font-family: 'Cinzel', serif;">44</div><div class="text-xs" style="color: var(--gray-primary);">Bioemprendimientos activos</div></div>
+          <div class="p-4" style="background: white; border: 1px solid #e2e8f0;"><div class="text-2xl mb-1" style="color: var(--social); font-family: 'Cinzel', serif;">563 ha</div><div class="text-xs" style="color: var(--gray-primary);">Certificadas Gold Standard</div></div>
+          <div class="p-4" style="background: white; border: 1px solid #e2e8f0;"><div class="text-2xl mb-1" style="color: var(--social); font-family: 'Cinzel', serif;">5</div><div class="text-xs" style="color: var(--gray-primary);">Capitales medidos</div></div>
+          <div class="p-4" style="background: white; border: 1px solid #e2e8f0;"><div class="text-2xl mb-1" style="color: var(--social); font-family: 'Cinzel', serif;">16.000 ha</div><div class="text-xs" style="color: var(--gray-primary);">Biocorredor Imbakucha</div></div>
         </div>
       </div>
     </section>
 
-    <!-- Los 5 Capitales -->
-    <section id="capitales" class="py-20 px-4">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl md:text-5xl text-center mb-16">Los 5 Capitales</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Capital Natural -->
-          <div class="text-center p-8 hover:bg-gray-light transition">
-            <div class="text-5xl mb-4" style="color: var(--natural)">✻</div>
-            <h3 class="text-2xl mb-4">Capital Natural</h3>
-            <p class="text-gray-primary mb-4">El agua como origen</p>
-            <p class="text-sm">Vida, naturaleza y base ecológica que sostiene todas las actividades.</p>
-          </div>
-
-          <!-- Capital Social -->
-          <div class="text-center p-8 hover:bg-gray-light transition">
-            <div class="text-5xl mb-4" style="color: var(--social)">⚭</div>
-            <h3 class="text-2xl mb-4">Capital Social</h3>
-            <p class="text-gray-primary mb-4">Alianzas multidisciplinarias</p>
-            <p class="text-sm">Relación, alianza y confianza. Cooperación y trabajo en red.</p>
-          </div>
-
-          <!-- Capital Ancestral -->
-          <div class="text-center p-8 hover:bg-gray-light transition">
-            <div class="text-5xl mb-4" style="color: var(--ancestral)">∞</div>
-            <h3 class="text-2xl mb-4">Capital Ancestral</h3>
-            <p class="text-gray-primary mb-4">Documentar para que perdure</p>
-            <p class="text-sm">Continuidad, identidad y memoria viva. Saberes y expresiones culturales.</p>
-          </div>
-
-          <!-- Capital Económico -->
-          <div class="text-center p-8 hover:bg-gray-light transition">
-            <div class="text-5xl mb-4" style="color: var(--economico)">✴︎</div>
-            <h3 class="text-2xl mb-4">Capital Económico</h3>
-            <p class="text-gray-primary mb-4">Transformación productiva</p>
-            <p class="text-sm">Energía productiva. Capacidad de generar valor y sostener la actividad.</p>
-          </div>
-
-          <!-- Capital Comunitario -->
-          <div class="text-center p-8 hover:bg-gray-light transition">
-            <div class="text-5xl mb-4" style="color: var(--comunitario)">⦿</div>
-            <h3 class="text-2xl mb-4">Capital Comunitario</h3>
-            <p class="text-gray-primary mb-4">Visión común</p>
-            <p class="text-sm">Núcleo y propósito común. Impacto colectivo y beneficio compartido.</p>
+    <section class="py-24 px-6" style="background: white;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: var(--social); font-family: 'Cinzel', serif; letter-spacing: 0.2em;">El Origen</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="max-w-3xl">
+          <h2 class="text-3xl md:text-4xl mb-8" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400; line-height: 1.3;">El Lago San Pablo tenía una travesía</h2>
+          <p class="mb-6" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9; font-size: 1.05rem;">Nadadores y deportistas de todo el Ecuador llegaban a Imbakucha a cruzarlo. La travesía del lago era un acontecimiento — traía atletas, visitantes, economía, orgullo territorial. Las operadoras turísticas, los hospedajes, los mercados, los artesanos: todos giraban alrededor de un ecosistema que funcionaba.</p>
+          <p class="mb-6" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9; font-size: 1.05rem;">Luego el agua se contaminó. El lago se estancó. Las competencias se fueron. Las operadoras turísticas lo saben mejor que nadie: sin naturaleza sana no hay turismo, y sin turismo la economía se frena junto con el agua.</p>
+          <p class="mb-10" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9; font-size: 1.05rem;">Pero las comunidades no esperaron. Están recuperando los ojos de agua para que el lago vuelva a circular. Los osos de anteojos están regresando a las laderas. Las personas se están organizando. La naturaleza responde.</p>
+          <div class="p-6" style="background: #F8FAFC; border-left: 3px solid var(--social);">
+            <p style="color: #1e293b; font-family: 'Georgia', serif; font-style: italic; line-height: 1.8;">Cuando un nadador pueda volver a cruzar el Lago San Pablo, sabremos que el Capital Natural del Biocorredor ha llegado donde necesitaba. Esa es nuestra meta verificable.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Proyectos Activos -->
-    <section id="proyectos" class="py-20 px-4 bg-gray-light">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl md:text-5xl text-center mb-16">Proyectos Activos</h2>
-        
-        <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
-          <!-- San Pablo del Lago -->
-          <div class="bg-white p-8">
-            <h3 class="text-3xl mb-4">San Pablo del Lago</h3>
-            <p class="text-xl text-gray-primary mb-4">Imbakucha, Ecuador</p>
-            <div class="mb-6">
-              <span class="text-4xl font-bold" style="color: var(--natural)">82%</span>
-              <span class="text-gray-primary ml-2">coherencia regenerativa</span>
-            </div>
-            <p class="mb-6">Proyecto piloto de regeneración territorial integral con verificación Gold Standard.</p>
-            <a href="/projects/san-pablo" class="inline-block px-6 py-2 bg-gray-dark text-white hover:bg-gray-primary transition">
-              Ver Proyecto →
-            </a>
+    <section class="py-24 px-6" style="background: #F8FAFC;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: #BC8465; font-family: 'Cinzel', serif; letter-spacing: 0.2em;">Capital Ancestral</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl mb-6" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Renacencia</h2>
+            <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">Los saberes de los abuelos no son folclore. Son tecnología viva — formas de cultivar, de curar, de relacionarse con el agua y la tierra que se han verificado durante siglos.</p>
+            <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">400 bordadoras mantienen activa una técnica ancestral que no existe en ningún otro lugar del mundo. 148 pirámides ceremoniales Caranqui permanecen en pie. El pueblo Kichwa Otavalo y Kichwa Karanki siguen transmitiendo lo que las instituciones no pueden medir.</p>
+            <p style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">MUNAI es el primer sistema que hace visible este capital — no como patrimonio del pasado sino como recurso activo del presente.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #BC8465;"><div class="text-xs uppercase mb-1" style="color: #BC8465; font-family: 'Cinzel', serif;">400 bordadoras</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Técnica ancestral activa. Identidad cultural convertida en economía viva.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #BC8465;"><div class="text-xs uppercase mb-1" style="color: #BC8465; font-family: 'Cinzel', serif;">148 pirámides Caranqui</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Arquitectura ceremonial que define la identidad del territorio.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #BC8465;"><div class="text-xs uppercase mb-1" style="color: #BC8465; font-family: 'Cinzel', serif;">Kichwa Otavalo · Kichwa Karanki</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Dos pueblos con saberes complementarios que se están reencontrando en el Biocorredor.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #BC8465;"><div class="text-xs uppercase mb-1" style="color: #BC8465; font-family: 'Cinzel', serif;">Invisible para B Corp · Fairtrade · Gold Standard</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Ningún sistema de certificación existente mide este capital. MUNAI sí.</div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Selector de Idioma -->
-    <section class="py-12 px-4 bg-gray-dark text-white text-center">
-      <div class="flex gap-4 justify-center">
-        <a href="/" class="underline">Español</a>
-        <span>|</span>
-        <a href="/en" class="hover:underline">English</a>
-        <span>|</span>
-        <a href="/it" class="hover:underline">Italiano</a>
+    <section class="py-24 px-6" style="background: white;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: #C5B37D; font-family: 'Cinzel', serif; letter-spacing: 0.2em;">Capital Económico</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div class="space-y-4">
+            <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0; border-left: 3px solid #C5B37D;"><div class="text-xs uppercase mb-1" style="color: #C5B37D; font-family: 'Cinzel', serif;">44 bioemprendimientos</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Verificados en San Pablo del Lago. La economía regenerativa ya existe.</div></div>
+            <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0; border-left: 3px solid #C5B37D;"><div class="text-xs uppercase mb-1" style="color: #C5B37D; font-family: 'Cinzel', serif;">5 líneas estratégicas</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Nutrición ancestral · Textiles · Turismo de conservación · Bio-cosmética · Agricultura regenerativa.</div></div>
+            <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0; border-left: 3px solid #C5B37D;"><div class="text-xs uppercase mb-1" style="color: #C5B37D; font-family: 'Cinzel', serif;">3 Co-Laboratorios MUNAI</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Artes y Oficios · Nutricional · Vivo. Donde el saber ancestral se convierte en producto.</div></div>
+            <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0; border-left: 3px solid #C5B37D;"><div class="text-xs uppercase mb-1" style="color: #C5B37D; font-family: 'Cinzel', serif;">somosuno.io</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">El mapa vivo de la economía regenerativa del territorio.</div></div>
+          </div>
+          <div>
+            <h2 class="text-3xl md:text-4xl mb-6" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Somos Uno</h2>
+            <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">La economía regenerativa del Biocorredor ya existe. No como proyecto futuro — como realidad presente. 44 familias y colectivos que producen, que crean, que conservan.</p>
+            <p class="mb-8" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">Lo que faltaba era el sistema que los hace visibles, mide su impacto en los cinco capitales y los conecta con mercados y certificaciones que responden a sus valores.</p>
+            <a href="https://somosuno.io" target="_blank" rel="noopener" class="inline-block px-8 py-3 transition-all hover:opacity-80" style="background: #F8FAFC; border: 1px solid #C5B37D; color: #C5B37D; font-family: 'Cinzel', serif; letter-spacing: 0.08em; font-size: 0.85rem;">Ver somosuno.io →</a>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="py-24 px-6" style="background: #F8FAFC;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: #7D9682; font-family: 'Cinzel', serif; letter-spacing: 0.2em;">El Modelo que Funciona</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl mb-6" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Zuleta y Angochagua</h2>
+            <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">A 30 minutos de San Pablo existe la prueba de que esto no es utopía. Zuleta lleva más de 30 años conservando más de 3.000 hectáreas. El cóndor andino regresó. El oso de anteojos volvió a las laderas. Los turistas llegan porque el territorio está vivo.</p>
+            <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">Angochagua y San Pablo del Lago no son dos territorios separados — son dos expresiones del mismo pueblo Kichwa con saberes complementarios. Angochagua tiene el modelo consolidado de conservación. San Pablo tiene la escala, el lago y los 44 bioemprendimientos.</p>
+            <p style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">El intercambio cultural entre los dos territorios es lo que activa el Biocorredor como unidad viva. No es transferencia de un modelo — es un reencuentro.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #7D9682;"><div class="text-xs uppercase mb-1" style="color: #7D9682; font-family: 'Cinzel', serif;">3.000+ ha en conservación</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Zuleta: tres décadas de conservación comunitaria verificable.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #7D9682;"><div class="text-xs uppercase mb-1" style="color: #7D9682; font-family: 'Cinzel', serif;">Cóndor andino · Oso de anteojos</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Especies en recuperación. Los osos ya están regresando también al Lago San Pablo.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #7D9682;"><div class="text-xs uppercase mb-1" style="color: #7D9682; font-family: 'Cinzel', serif;">Turismo que llega por el territorio vivo</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">La economía de Zuleta gira alrededor de naturaleza conservada. Es el camino que San Pablo está recuperando.</div></div>
+            <div class="p-5" style="background: white; border: 1px solid #e2e8f0; border-left: 3px solid #7D9682;"><div class="text-xs uppercase mb-1" style="color: #7D9682; font-family: 'Cinzel', serif;">El intercambio</div><div class="text-sm" style="color: #64748b; line-height: 1.6;">Angochagua aporta el modelo de conservación. San Pablo aporta la escala y la red económica. Juntos son el Biocorredor.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6" style="background: white;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: var(--social); font-family: 'Cinzel', serif; letter-spacing: 0.2em;">MUNAI</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="max-w-3xl mb-12">
+          <h2 class="text-3xl md:text-4xl mb-6" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">La metodología que lo mide todo</h2>
+          <p class="mb-5" style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">El lago, los osos, las bordadoras, los bioemprendedores, la travesía — todo eso tiene valor. El problema es que los sistemas convencionales solo ven el dinero que genera ahora. No ven lo que lo hace posible.</p>
+          <p style="color: #334155; font-family: 'DM Sans', sans-serif; line-height: 1.9;">MUNAI mide los cinco capitales que sostienen cualquier territorio. La fórmula es multiplicativa: si uno colapsa, todos lo sienten.</p>
+        </div>
+        <div class="text-center py-8 px-6 mb-10" style="background: #F8FAFC; border: 1px solid #e2e8f0; border-top: 3px solid var(--social);">
+          <div class="text-xl mb-2" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400; letter-spacing: 0.05em;">✣ = ( ✻ × ⚭ × ∞ × ✴︎ × ⦿ ) / ( T × R )</div>
+          <div class="text-xs mt-2" style="color: #94a3b8;">Prosperidad Regenerativa = cinco capitales / (tiempo × recursos)</div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0;"><div class="text-xl mb-2" style="color: #7D9682;">✻</div><div class="text-sm mb-1" style="color: #7D9682; font-family: 'Cinzel', serif;">Capital Natural</div><div class="text-xs" style="color: #64748b; line-height: 1.6;">El lago, el agua, los osos, la biodiversidad. La base de todo lo demás.</div></div>
+          <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0;"><div class="text-xl mb-2" style="color: #84A8A9;">⚭</div><div class="text-sm mb-1" style="color: #84A8A9; font-family: 'Cinzel', serif;">Capital Social</div><div class="text-xs" style="color: #64748b; line-height: 1.6;">Las redes de confianza que hacen posible organizarse para recuperar el territorio.</div></div>
+          <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0;"><div class="text-xl mb-2" style="color: #BC8465;">∞</div><div class="text-sm mb-1" style="color: #BC8465; font-family: 'Cinzel', serif;">Capital Ancestral</div><div class="text-xs" style="color: #64748b; line-height: 1.6;">Las bordadoras, las pirámides, los saberes vivos. El capital que ningún otro sistema mide.</div></div>
+          <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0;"><div class="text-xl mb-2" style="color: #C5B37D;">✴︎</div><div class="text-sm mb-1" style="color: #C5B37D; font-family: 'Cinzel', serif;">Capital Económico</div><div class="text-xs" style="color: #64748b; line-height: 1.6;">Los 44 bioemprendimientos, la travesía, el turismo que vuelve cuando el lago sana.</div></div>
+          <div class="p-5" style="background: #F8FAFC; border: 1px solid #e2e8f0;"><div class="text-xl mb-2" style="color: #8A8291;">⦿</div><div class="text-sm mb-1" style="color: #8A8291; font-family: 'Cinzel', serif;">Capital Comunitario</div><div class="text-xs" style="color: #64748b; line-height: 1.6;">La visión compartida de Angochagua y San Pablo. El Biocorredor como propósito colectivo.</div></div>
+          <div class="p-5" style="background: var(--gray-dark);"><div class="text-xl mb-2" style="color: var(--social);">✣</div><div class="text-sm mb-1" style="color: white; font-family: 'Cinzel', serif;">Prosperidad Regenerativa</div><div class="text-xs" style="color: #94a3b8; line-height: 1.6;">El resultado verificable. La travesía volvió. El lago circula. El territorio vive.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-6" style="background: #F8FAFC;">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-baseline gap-4 mb-12"><span class="text-xs uppercase tracking-widest" style="color: var(--social); font-family: 'Cinzel', serif; letter-spacing: 0.2em;">Alianzas Activas</span><div class="flex-1 h-px" style="background: #e2e8f0;"></div></div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">NaturaPlus</div><div class="text-xs" style="color: #64748b;">Verificación de campo y biodiversidad</div></div>
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Fundación Galo Plaza Lasso</div><div class="text-xs" style="color: #64748b;">Gestión institucional territorial</div></div>
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">GAD San Pablo del Lago</div><div class="text-xs" style="color: #64748b;">Gobierno territorial · Socio piloto</div></div>
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Gold Standard · South Pole</div><div class="text-xs" style="color: #64748b;">Certificación carbono 563 ha desde 2018</div></div>
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Smart Planet</div><div class="text-xs" style="color: #64748b;">Tecnología e infraestructura digital</div></div>
+          <div class="p-5" style="background: white; border: 1px solid #e2e8f0;"><div class="text-sm mb-1" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Universidad Técnica del Norte</div><div class="text-xs" style="color: #64748b;">Investigación y validación académica</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6" style="background: white;">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="text-4xl mb-6" style="color: var(--social); font-family: 'Cinzel', serif;">✣</div>
+        <h2 class="text-3xl mb-4" style="color: #1e293b; font-family: 'Cinzel', serif; font-weight: 400;">Únete al Ecosistema</h2>
+        <p class="mb-10" style="color: #64748b; font-family: 'DM Sans', sans-serif; line-height: 1.8;">Empresas, gobiernos locales, organizaciones e inversores que quieran construir territorios donde la vida, la cultura y la economía crezcan juntas.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <a href="mailto:contacto@nuevaera.ec?subject=Empresa" class="py-3 px-4 text-sm transition-all hover:opacity-70" style="background: #F8FAFC; border: 1px solid #e2e8f0; color: #1e293b; font-family: 'Cinzel', serif;">Empresa</a>
+          <a href="mailto:contacto@nuevaera.ec?subject=Gobierno" class="py-3 px-4 text-sm transition-all hover:opacity-70" style="background: #F8FAFC; border: 1px solid #e2e8f0; color: #1e293b; font-family: 'Cinzel', serif;">Gobierno</a>
+          <a href="mailto:contacto@nuevaera.ec?subject=Organización" class="py-3 px-4 text-sm transition-all hover:opacity-70" style="background: #F8FAFC; border: 1px solid #e2e8f0; color: #1e293b; font-family: 'Cinzel', serif;">Organización</a>
+          <a href="mailto:contacto@nuevaera.ec?subject=Inversor" class="py-3 px-4 text-sm transition-all hover:opacity-70" style="background: #F8FAFC; border: 1px solid #e2e8f0; color: #1e293b; font-family: 'Cinzel', serif;">Inversor</a>
+        </div>
+        <a href="mailto:contacto@nuevaera.ec" class="inline-block px-10 py-4 text-white transition-all hover:opacity-80" style="background: var(--gray-dark); font-family: 'Cinzel', serif; letter-spacing: 0.1em; font-size: 0.85rem;">Escríbenos →</a>
+      </div>
+    </section>
+
+    <footer class="py-12 px-6" style="background: #1e293b; color: #64748b;">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left"><div class="text-lg mb-1" style="color: #94a3b8; font-family: 'Cinzel', serif; letter-spacing: 0.06em;">MUNAI · Nueva E.R.A.</div><div class="text-xs">Economía Regenerativa Ancestral · Ecuador · 2026</div></div>
+        <div class="flex gap-6 text-xs flex-wrap justify-center">
+          <a href="https://somosuno.io" class="hover:text-white transition-colors">somosuno.io</a>
+          <a href="https://nuevaera.ec" class="hover:text-white transition-colors">nuevaera.ec</a>
+          <a href="https://prosperidadregenerativa.com" class="hover:text-white transition-colors">prosperidadregenerativa.com</a>
+        </div>
+        <div class="flex gap-4 text-xs"><a href="/" class="underline" style="color: #94a3b8;">ES</a><span>|</span><a href="/en" class="hover:text-white transition-colors">EN</a></div>
+      </div>
+    </footer>
   </main>
 </Layout>
